@@ -27,7 +27,7 @@ AuthData 需要从微信官方提供的 SDK 获取到，或者使用第三方提
 
 Demo 运行效果如下图所示：
 
-<img src="http://lc-I94is3iS.cn-n1.lcfile.com/2246a554fdbb996e7862.png" width = "200" height = "400" alt="图片名称" align=center />
+<img src="http://lc-I94is3iS.cn-n1.lcfile.com/2246a554fdbb996e7862.png" width = "108" height = "192" alt="图片名称" align=center />
 
 Demo 中一共演示下面三种情况，更多的使用细节请参考文档。
 
