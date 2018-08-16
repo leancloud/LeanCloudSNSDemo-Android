@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.leancloud.leancloudsnsdemo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/weixin_authdata_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/weixin_unionid_main"
+            android:layout_marginBottom="30dp"
+            android:text="微信 AuthData 登录"/>
+
+        <Button
+            android:id="@+id/weixin_unionid_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="微信 UnionId 登录"/>
+
+        <Button
+            android:id="@+id/weixin_associate_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/weixin_unionid_main"
+            android:layout_marginTop="30dp"
+            android:text="LeanCloud 用户绑定微信"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
