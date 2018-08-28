@@ -24,17 +24,26 @@
             android:id="@+id/weixin_unionid_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/weixin_associate_main"
             android:text="微信 UnionId 登录"/>
 
         <Button
             android:id="@+id/weixin_associate_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/weixin_unionid_main"
+            android:layout_centerInParent="true"
             android:layout_marginTop="30dp"
             android:text="LeanCloud 用户绑定微信"/>
+
+        <Button
+            android:id="@+id/weixin_unassociate_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/weixin_associate_main"
+            android:layout_marginTop="30dp"
+            android:text="解绑微信"/>
 
     </RelativeLayout>
 

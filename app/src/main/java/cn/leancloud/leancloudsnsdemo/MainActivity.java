@@ -167,5 +167,26 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
+    // 解绑微信
+    findViewById(R.id.weixin_unassociate_main).setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+        // 已经注册过用户名为 Jerry 的用户，并且该用户绑定了 weixin 平台的 authData
+
+        AVUser.logInInBackground("Jerry", "123456", new LogInCallback<AVUser>() {
+          @Override
+          public void done(AVUser avUser, AVException e) {
+            avUser.dissociateAuthData("weixin", new SaveCallback() {
+              @Override
+              public void done(AVException e) {
+
+              }
+            });
+          }
+        });
+      }
+    });
+
   }
 }
